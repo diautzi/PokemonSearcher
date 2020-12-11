@@ -7326,34 +7326,6 @@
         "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
         "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/151.png"
       }
-    },
-    {
-      "name": "Bulbasaur",
-      "stats": [
-        {
-          "value": "",
-          "name": "hp"
-        }
-      ],
-      "sprites": {
-        "front": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
-        "back": ""
-      },
-      "id": 207
-    },
-    {
-      "name": "Zapdos",
-      "stats": [
-        {
-          "value": "",
-          "name": "hp"
-        }
-      ],
-      "sprites": {
-        "front": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/145.png",
-        "back": ""
-      },
-      "id": 208
     }
   ]
 }

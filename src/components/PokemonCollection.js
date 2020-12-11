@@ -12,8 +12,8 @@ function PokemonCollection({ pokemonCollection }) {
                     pokemon={pokemon}
                 />))
             }
-       </Card.Group>
-    )
+        </Card.Group>
+    );
 };
 
 export default PokemonCollection;
