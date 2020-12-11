@@ -1,10 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { Search } from 'semantic-ui-react';
 import PokemonCollection from './PokemonCollection';
+import PokemonForm from './PokemonForm';
 
 export default function PokemonIndex() {
     const [pokemonCollection, setPokemonCollections] = useState([]);
     const [search, setSearch] = useState('');
+
+    useEffect(() => {
+        fetch('http://localhost:3000/pokemon')
+            .then(res => res.json())
+            .then(pokemonCollection => setPokemonCollections(pokemonCollection))
+            .catch(e => console.error(e))
+    }, []);
 
     // function that handles setting search value
     const handleSearch = (e) => {
@@ -16,16 +24,14 @@ export default function PokemonIndex() {
         pokemon.name.includes(search)
     );
 
-    useEffect(() => {
-        fetch('http://localhost:3000/pokemon')
-            .then(res => res.json())
-            .then(pokemonCollection => setPokemonCollections(pokemonCollection))
-            .catch(e => console.error(e))
-    }, []);
+    const addPokemon = (pokemon) => {
+        setPokemonCollections([...pokemonCollection, pokemon])
+    }
 
     return (
         <div style={{ margin: 16 }}>
             <h1>Pokemon Searcher</h1>
+            <PokemonForm addPokemon={addPokemon}/>
             <div style={{ margin: 16 }}>
                 <Search onSearchChange={handleSearch} />
             </div>

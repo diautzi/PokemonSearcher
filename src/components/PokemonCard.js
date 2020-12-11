@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card } from 'semantic-ui-react';
 
 export default function PokemonCard({ pokemon }) {
     const { name, stats, sprites } = pokemon;
     const hp = stats.find(s => s.name === 'hp').value || 50;
+    const [flipped, setFlipped] = useState(true);
+    const togglePic = () => {
+        setFlipped(!flipped)
+    };
 
     return (
         <Card>
             <div>
-                <div className="image">
-                    <img src={sprites.front} alt="oh no!" />
+                <div onClick={togglePic} className="image">
+                    <img src={flipped ? sprites.front : sprites.back} alt="oh no!" />
                 </div>
                 <div className="content">
                     <div className="header">{name}</div>
