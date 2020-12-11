@@ -19,13 +19,13 @@ Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
 - **Create an index displaying pokemon 'cards'**
   - Render each pokemon name, picture, and hp in a card
   
-  ![alt text](https://github.com/diautzi/PokemonSearcher/blob/main/Screen%20Shot%202020-12-10%20at%207.08.53%20PM.png)
+  ![alt text](https://github.com/diautzi/PokemonSearcher/blob/main/allpokemons.png)
   - When clicked, the card should toggle between displaying the front and back pictures: 
   
   ![alt text](https://github.com/diautzi/PokemonSearcher/blob/main/Screen%20Shot%202020-12-10%20at%207.28.57%20PM.png)
 - **Allow users to search a pokemon by its name in order to narrow down the cards shown on the page**
-  ![alt text](https://github.com/diautzi/PokemonSearcher/blob/main/Screen%20Shot%202020-12-10%20at%207.10.43%20PM.png)
+  ![alt text](https://github.com/diautzi/PokemonSearcher/blob/main/filteredPokemons.png)
   
   - ...and result found!
   
-  ![alt text](https://github.com/diautzi/PokemonSearcher/blob/main/Screen%20Shot%202020-12-10%20at%207.10.55%20PM.png)
+  ![alt text](https://github.com/diautzi/PokemonSearcher/blob/main/searchResult.png)
