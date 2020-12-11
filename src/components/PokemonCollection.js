@@ -1,11 +1,19 @@
-import React from 'react'
+import React from 'react';
+import PokemonCard from './PokemonCard';
+import { Card } from 'semantic-ui-react';
 
-function PokemonCollection() {
+function PokemonCollection({ pokemonCollection }) {
+    // pokemonCollection.map(poke => console.log(poke))
     return (
-        <div>
-            
-        </div>
+        <Card.Group itemsPerRow={6}>
+            {pokemonCollection.map((pokemon =>
+                <PokemonCard
+                    key={pokemon.id}
+                    pokemon={pokemon}
+                />))
+            }
+       </Card.Group>
     )
-}
+};
 
-export default PokemonCollection
+export default PokemonCollection;
