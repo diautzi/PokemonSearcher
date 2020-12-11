@@ -7326,6 +7326,20 @@
         "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
         "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/151.png"
       }
+    },
+    {
+      "name": "Bulsabaur",
+      "stats": [
+        {
+          "value": "68",
+          "name": "hp"
+        }
+      ],
+      "sprites": {
+        "front": "https://img.pokemondb.net/sprites/home/normal/bulbasaur.png",
+        "back": "https://img.pokemondb.net/sprites/home/shiny/bulbasaur.png"
+      },
+      "id": 207
     }
   ]
 }
