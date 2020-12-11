@@ -27,15 +27,24 @@ export default function PokemonIndex() {
     const addPokemon = (pokemon) => {
         setPokemonCollections([...pokemonCollection, pokemon])
     }
+    const deletePokemon = (id) => {
+        const data = pokemonCollection.filter(i => i.id !== id)
+        setPokemonCollections(data)
+    }
 
     return (
         <div style={{ margin: 16 }}>
             <h1>Pokemon Searcher</h1>
             <PokemonForm addPokemon={addPokemon}/>
             <div style={{ margin: 16 }}>
-                <Search onSearchChange={handleSearch} />
+                <Search onSearchChange={handleSearch}/>
             </div>
-            <PokemonCollection pokemonCollection={desiredPokemon} showNoResults={false} />
+            <PokemonCollection
+                deletePokemon={deletePokemon}
+                pokemonCollection={desiredPokemon}
+                showNoResults={false}
+                setPokemonCollections={setPokemonCollections}
+            />
         </div>
     );
 };

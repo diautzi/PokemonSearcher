@@ -1,13 +1,22 @@
 import React, { useState } from 'react';
-import { Card } from 'semantic-ui-react';
+import { Button, Card } from 'semantic-ui-react';
 
-export default function PokemonCard({ pokemon }) {
-    const { name, stats, sprites } = pokemon;
+export default function PokemonCard({ pokemon, deletePokemon }) {
+    const { id, name, stats, sprites } = pokemon;
     const hp = stats.find(s => s.name === 'hp').value || 50;
     const [flipped, setFlipped] = useState(true);
     const togglePic = () => {
         setFlipped(!flipped)
     };
+
+    const handleDelete = id => {
+        fetch(`http://localhost:3000/pokemon/` + id, {
+          method: "DELETE",
+        })
+        .then(resp => resp.json())
+        .then(data => deletePokemon(data))
+        .catch(error => console.error(error))
+    }
 
     return (
         <Card>
@@ -25,6 +34,7 @@ export default function PokemonCard({ pokemon }) {
                     </span>
                 </div>
             </div>
+            <Button onClick={() => deletePokemon(id)}>Delete</Button>
         </Card>
     );
 };
