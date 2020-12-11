@@ -25,7 +25,9 @@ Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
   ![alt text](https://github.com/diautzi/PokemonSearcher/blob/main/Screen%20Shot%202020-12-10%20at%207.28.57%20PM.png)
 - **Allow users to search a pokemon by its name in order to narrow down the cards shown on the page**
   ![alt text](https://github.com/diautzi/PokemonSearcher/blob/main/filteredPokemons.png)
-  
-  - ...and result found!
-  
   ![alt text](https://github.com/diautzi/PokemonSearcher/blob/main/searchResult.png)
+
+  - **Allow users to add a new pokemon to their collection**
+  ![alt text](https://github.com/diautzi/PokemonSearcher/blob/main/pokemonForm.png)
+  ![alt text](https://github.com/diautzi/PokemonSearcher/blob/main/newPokemon.png)
+
