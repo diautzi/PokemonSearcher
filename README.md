@@ -27,8 +27,8 @@ Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
 - **Allow users to search a pokemon by its name in order to narrow down the cards shown on the page**
   ![alt text](https://github.com/diautzi/PokemonSearcher/blob/main/images/filteredPokemons.png)
 
-  - **Allow users to add a new pokemon to their collection**
+- **Allow users to add a new pokemon to their collection**
   ![alt text](https://github.com/diautzi/PokemonSearcher/blob/main/images/pokemonForm.png)
   ![alt text](https://github.com/diautzi/PokemonSearcher/blob/main/images/newPokemon.png)
 
-  - **Allow users to delete the unwanted pokemons from the collection**
+- **Allow users to delete the unwanted pokemons from the collection**
