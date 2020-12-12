@@ -15,7 +15,9 @@ Runs the app in the development mode.
 Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
 
 ## App Goals
-- **Create an index displaying pokemon 'cards'**
+##### PokemonSearcher is a complete React.js CRUD applicationa that: 
+
+- **Home page allows users to check out all pokemons collection 'cards'**
   - Render each pokemon name, picture, and hp in a card
   
   ![alt text](https://github.com/diautzi/PokemonSearcher/blob/main/images/allPokemons.png)
@@ -29,3 +31,4 @@ Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
   ![alt text](https://github.com/diautzi/PokemonSearcher/blob/main/images/pokemonForm.png)
   ![alt text](https://github.com/diautzi/PokemonSearcher/blob/main/images/newPokemon.png)
 
+  - **Allow users to delete the unwanted pokemons from the collection**
